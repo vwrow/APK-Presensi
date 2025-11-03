@@ -1,0 +1,71 @@
+Card(
+            margin: EdgeInsets.only(top: 20, left: 30, right: 30),
+            color: Color.fromARGB(255, 176, 20, 20),
+            child: Container(
+              width: 2500,
+              height: 230,
+              padding: EdgeInsets.all(20),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Senin, 3 November 2025',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                  Container(
+                    height: 140,
+                    width: 2500,
+                    margin: EdgeInsets.only(top: 10),
+                    padding: EdgeInsets.all(15),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(5),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Status Kehadiran",
+                              style: TextStyle(
+                                fontSize: 16,
+                                color: const Color.fromARGB(150, 0, 0, 0),
+                                fontFamily: 'Poppins',
+                              ),
+                            ),
+                            Text(
+                              "Present",
+                              style: TextStyle(
+                                fontSize: 30,
+                                color: Colors.green,
+                                fontFamily: 'Poppins',
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+
+                            Text(
+                              "Waktu presensi: 06:22",
+                              style: TextStyle(
+                                fontSize: 16,
+                                color: const Color.fromARGB(150, 0, 0, 0),
+                                fontFamily: 'Poppins',
+                              ),
+                            ),
+                          ],
+                        ),
+                        SizedBox(width: 50),
+                        Icon(Icons.fingerprint, size: 70, color: Colors.green),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
